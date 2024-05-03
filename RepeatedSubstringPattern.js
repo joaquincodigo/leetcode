@@ -11,9 +11,7 @@ var repeatedSubstringPattern = function (s) {
 
 	for (const char of s) {
 		subS += char
-		console.log("SubS:", subS)
 		reps = s.length / subS.length
-		console.log("reps:", reps)
 		if (subS.repeat(reps) == s && reps > 1) {
 			return true
 		}
